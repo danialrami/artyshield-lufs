@@ -1,0 +1,78 @@
+╔═══════════════════════════════════════════════════════════════════════╗
+║                  LUFS AUDIO + ARTSHIELD LAB PITCH DECK               ║
+║                         QUICK REFERENCE CARD                         ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+📍 LOCATION
+/Users/danielramirez/repos/artyshield-lufs
+
+🚀 TO START PRESENTATION
+open index.html
+
+⌨️ NAVIGATION
+• Click arrows (bottom-right corner)
+• Left/Right arrow keys
+• Progress bar tracks position
+
+📊 7 SLIDES
+Slide 1: Partnership Headline (LUFS Audio + ArtyShield Lab)
+Slide 2: Bridging Audio Protection & Accessibility Through Research
+Slide 3: Audio Protection Through Three Dimensions
+Slide 4: Proven Track Record: Audio Protection & Scale (Hinge Health: 18%, 70k+)
+Slide 5: Scalable Applications for Audio Protection & Accessibility
+Slide 6: Partnership Model (Pilot-to-Scale, Service Partnership, Research Impact)
+Slide 7: Let's Build This Together (Contact)
+
+💡 KEY MESSAGE
+Research informs better audio protection and accessibility. 
+Implementation creates real-world impact. Together: validated research 
+becomes deployable solutions that serve communities and advance the field.
+
+🎯 CORE POSITIONING
+"Bridging Audio Protection & Accessibility Through Research-Backed Implementation"
+
+✅ READY TO PRESENT
+✓ Navigation working (buttons + keyboard)
+✓ Audio waves animating on all slides
+✓ Progress bar updating correctly
+✓ Copy balanced for audio protection + accessibility
+✓ Slide 6 centered layout professional
+✓ All files committed (8 commits)
+✓ Documentation complete
+
+🔧 IF SOMETHING GOES WRONG
+1. Open browser console: F12
+2. Check for errors (red text)
+3. Hard refresh: Cmd+Shift+R (Mac) or Ctrl+Shift+R (Windows)
+4. Revert to backup: cp index.html.backup index.html
+
+📚 DOCUMENTATION
+• SESSION_COMPLETE.md - Full session summary
+• UPDATES_SUMMARY.md - Today's changes
+• TEST_NAVIGATION.md - Navigation testing guide
+• PRESENTATION_QUICK_START.md - Meeting talking points
+• docs/STRATEGIC_RECOMMENDATIONS.md - Strategy background
+
+🎤 TALKING POINTS
+• Slide 1: Partnership where research meets implementation
+• Slide 2: Complementary strengths (research + implementation)
+• Slide 3: Three dimensions - audio, development, research
+• Slide 4: Hinge Health proof - 18% retention, 70k+ users
+• Slide 5: Applications across contexts
+• Slide 6: Multiple partnership pathways
+• Slide 7: Let's work together on audio protection and accessibility
+
+📞 CONTACT
+LUFS Audio: daniel@lufs.audio | (714) 616-1558 | lufs.audio
+ArtyShield Lab: Prof. Jian Liu (UGA)
+
+⚙️ GIT COMMANDS
+git log --oneline          (view all commits)
+git show 7a76e14          (see what changed)
+git diff 60db5ef 7a76e14  (compare commits)
+git status                (check current state)
+
+✨ STATUS: READY FOR PRESENTATION TODAY ✨
+
+Last updated: November 7, 2025
+Next: Meet with Prof. Jian Liu 🎤
