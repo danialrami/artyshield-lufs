@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUFS Audio | River Walk Events Partnership</title>
+    <meta name="description" content="LUFS Audio - Professional audio production and full-stack development services for San Antonio River Walk Events">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml"> -->
+    <!-- Add Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+
+    <!-- Main Navigation Tabs 
+    <div class="main-navigation">
+        <button class="nav-tab active" id="pitchDeckTab">Pitch Deck</button>
+        <button class="nav-tab" id="pricingTab">Pricing Sheet</button>
+    </div> -->
+
+    <!-- Pitch Deck Section -->
+    <div class="section" id="pitchDeckSection">
+        <!-- Slide 1: Introduction -->
+        <div class="slide title-slide active" id="slide1">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h1 class="glitch-effect" data-text="Daniel Ramirez | LUFS Audio">Daniel Ramirez | LUFS Audio</h1>
+                <h2>UX Sound Designer and Audio Dev</h2>
+                <p>Passionate about creating exceptional experiences that bring our community together</p>
+                <p class="mission">Committed to making River Walk events more accessible, engaging, and operationally efficient</p>
+                <div class="mission-statement">
+                    <strong>Mission:</strong> Bridging the gap between cutting-edge audio technology and practical event solutions
+                </div>
+            </div>
+            <div class="wave-bg">
+                <svg width="100%" height="100%" viewBox="0 0 1000 300" preserveAspectRatio="none">
+                    <path d="M0,150 C100,100 200,200 300,150 C400,100 500,200 600,150 C700,100 800,200 900,150 L900,300 L0,300 Z" 
+                        fill="url(#tealGradient)" opacity="0.7"/>
+                    <path d="M0,180 C150,130 250,230 350,180 C450,130 550,230 650,180 C750,130 850,230 950,180 L950,300 L0,300 Z" 
+                        fill="url(#blueGradient)" opacity="0.5"/>
+                    <defs>
+                        <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#78BEBA" stop-opacity="0.2"/>
+                            <stop offset="50%" stop-color="#78BEBA" stop-opacity="0.5"/>
+                            <stop offset="100%" stop-color="#78BEBA" stop-opacity="0.2"/>
+                        </linearGradient>
+                        <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#2C5AA0" stop-opacity="0.2"/>
+                            <stop offset="50%" stop-color="#2C5AA0" stop-opacity="0.5"/>
+                            <stop offset="100%" stop-color="#2C5AA0" stop-opacity="0.2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="audio-wave" id="audioWave1"></div>
+        </div>
+
+        <!-- Slide 2: Dual Expertise Value Proposition -->
+        <div class="slide expertise-slide" id="slide2">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Why Audio + Development = Game-Changing Results">Why Audio + Development = Game-Changing Results</h2>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-section audio">
+                        <h3>Audio Expertise</h3>
+                        <ul class="expertise-list">
+                            <li>Live event mixing and production (Sunnyvale Theater experience)</li>
+                            <li>Interactive audio systems for outdoor environments</li>
+                            <li>Accessibility-focused sound design for diverse audiences</li>
+                            <li>Training from IRCAM Paris and Hans Zimmer's team</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-section development">
+                        <h3>Development Capabilities</h3>
+                        <ul class="expertise-list">
+                            <li>8+ custom websites and automated systems</li>
+                            <li>Previous Clients: Hinge Health and xAI</li>
+                            <li>Real-time data processing and management for CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="key-achievement">
+                    <strong>Key Achievement:</strong> At Hinge Health, audio-focused flows resulted in 18% increase in user retention
+                </div>
+            </div>
+            <div class="audio-wave" id="audioWave2"></div>
+        </div>
+
+        <!-- Slide 3: Relevant Experience -->
+        <div class="slide experience-slide" id="slide3">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Proven Track Record in Event Production & Technical Solutions">Proven Track Record in Event Production & Technical Solutions</h2>
+                
+                <div class="experience-grid">
+                    <div class="experience-section production">
+                        <h3>Event Production Experience</h3>
+                        <ul class="experience-list">
+                            <li>Live mixing at Sunnyvale Theater (A1/A2 Board Operator, Sound Designer)
+                                <ul>
+                                    <li>Midas, Yamaha, Allen & Heath mixing boards</li>
+                                </ul>
+                            </li>
+                            <li>Outdoor event audio challenges: Weather-resistant setups and reliable deployment</li>
+                            <li>Interactive audio installations using industry standard tools
+                                <ul>
+                                    <li>Wwise, Max/MSP, Supercollider</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-section technical">
+                        <h3>Technical Development</h3>
+                        <ul class="experience-list">
+                            <li>Automated content management systems</li>
+                            <li>Software and Hardware development
+                                <ul>
+                                    <li><a href="https://danialrami.com/posts/lua-in-reaper/" target="_blank">Portable Live Audio Mixer</a></li>
+                                    <li><a href="https://danialrami.com/posts/echo-bridge-effects-pedal/" target="_blank">Echo Bridge Guitar Pedal</a></li>
+                                </ul>
+                            </li>
+                            <li>Real-time Coordination Pipelines using Jira</li>
+                            <li>Data processing systems with Mixpanel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-wave" id="audioWave3"></div>
+        </div>
+
+        <!-- Slide 4: River Walk Event Applications -->
+        <div class="slide applications-slide" id="slide4">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Transforming River Walk Events Through Audio Innovation">Transforming River Walk Events Through Audio Innovation</h2>
+                
+                <div class="applications-grid">
+                    <div class="application-section visitor">
+                        <h3>Enhanced Visitor Experiences</h3>
+                        <ul class="application-list">
+                            <li>Interactive audio tours with QR code activation</li>
+                            <li>Multilingual accessibility systems for locals/tourists</li>
+                            <li>Weather-adaptive sound systems for outdoor reliability</li>
+                            <li>Real-time audio announcements and crowd management</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="application-section technical">
+                        <h3>Technical Event Solutions</h3>
+                        <ul class="application-list">
+                            <li>Remote monitoring and control capabilities</li>
+                            <li>Integration with existing River Walk infrastructure</li>
+                            <li>Scalable audio solutions for events of any size</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="application-section volunteer">
+                        <h3>Volunteer Coordination</h3>
+                        <ul class="application-list">
+                            <li>Performance analytics and feedback loops</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="application-section operational">
+                        <h3>Operational Efficiency</h3>
+                        <ul class="application-list">
+                            <li>Workflow automation for repetitive tasks</li>
+                            <li>Data processing for volunteer analytics</li>
+                            <li>Integration with existing Visit San Antonio systems</li>
+                            <li>Automated onboarding processes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-wave" id="audioWave4"></div>
+        </div>
+
+        <!-- Slide 5: Partnership Investment -->
+        <div class="slide investment-slide" id="slide5">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Investment in Excellence">Investment in Excellence</h2>
+                
+                <p class="investment-intro">I'm excited to contribute to San Antonio's River Walk events and build a lasting partnership with your team.</p>
+                
+                <div class="investment-grid">
+                    <div class="investment-section approach">
+                        <h3>Partnership Approach</h3>
+                        <ul class="investment-list">
+                            <li>Standard market rates: $45-65/hour</li>
+                            <li>Community partnership pricing: $35-50/hour</li>
+                            <li>Flexible project packages available</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="investment-section results">
+                        <h3>Previous Client Results</h3>
+                        <ul class="investment-list">
+                            <li>Hinge Health: $60/hr (18% retention increase)</li>
+                            <li>xAI: $50/hr (streamlined voice mode pipeline)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="investment-section packages">
+                        <h3>Project Packages</h3>
+                        <ul class="investment-list">
+                            <li>Event Audio Setup & Management: $500-2,000 per event</li>
+                            <li>Volunteer System Development: $3,000-8,000 (one-time build)</li>
+                            <li>Interactive Audio Installations: $1,500-3,000 per installation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-bars" id="audioBars"></div>
+            <div class="audio-wave" id="audioWave5"></div>
+        </div>
+
+        <!-- Slide 6: Contact & Next Steps -->
+        <div class="slide contact-slide" id="slide6">
+            <div class="subtle-texture"></div>
+            <div class="circular-audio" id="circularAudio"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Contact & Next Steps">Contact & Next Steps</h2>
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:daniel@lufs.audio">daniel@lufs.audio</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+17146161558">(714) 616-1558</a></p>
+                        <p><i class="fas fa-globe"></i> <a href="https://daniel-ramirez.io" target="_blank">daniel-ramirez.io</a></p>
+                        <p><i class="fas fa-globe"></i> <a href="https://danialrami.com" target="_blank">danialrami.com</a></p>
+                        <p><i class="fas fa-globe"></i> <a href="https://lufs.audio" target="_blank">lufs.audio</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-wave" id="audioWave6"></div>
+        </div>
+
+        <!-- Slide Navigation -->
+        <div class="slide-navigation">
+            <button class="nav-btn" id="prevBtn">←</button>
+            <button class="nav-btn" id="nextBtn">→</button>
+        </div>
+    </div>
+
+    <!-- Pricing Sheet Section -->
+    <div class="section" id="pricingSection" style="display: none;">
+        <div class="subtle-texture"></div>
+        <div class="pricing-content">
+            <div class="pricing-header">
+                <h1>LUFS Audio Partnership Pricing Sheet</h1>
+                <p class="pricing-subtitle">Collaborative Solutions for River Walk Events</p>
+            </div>
+
+            <div class="pricing-philosophy">
+                <h2>Collaboration Philosophy</h2>
+                <p>As a San Antonio local, I'm committed to finding creative ways to make this partnership work within your budget constraints while delivering exceptional value. I believe in building lasting relationships with our community partners, and I'm excited to contribute to the events that bring our city together.</p>
+            </div>
+
+            <div class="pricing-table-container">
+                <h2>Partnership Pricing</h2>
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service Type</th>
+                            <th>Standard Rate</th>
+                            <th>Partnership Development Rate*</th>
+                            <th>Project Package Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Audio Production & Event Services</strong></td>
+                            <td>$45-55/hour</td>
+                            <td>$35-45/hour</td>
+                            <td>$500-2,000 per event</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Full-Stack Development & Automation</strong></td>
+                            <td>$55-65/hour</td>
+                            <td>$40-55/hour</td>
+                            <td>$3,000-8,000 per system</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Combined Audio-Tech Projects</strong></td>
+                            <td>$65-75/hour</td>
+                            <td>$50-65/hour</td>
+                            <td>Custom packages available</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Consulting & Strategy</strong></td>
+                            <td>$60/hour</td>
+                            <td>$40/hour</td>
+                            <td>$200-500 per session</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="pricing-note">*Partnership Development Rates apply to pilot projects, ongoing partnerships, and community-focused initiatives.</p>
+            </div>
+
+            <div class="pricing-experience">
+                <h2>Previous Client Experience & Results</h2>
+                <ul class="experience-results">
+                    <li><strong>Hinge Health:</strong> $60/hour → Achieved 18% user retention increase through audio-focused UX flows</li>
+                    <li><strong>xAI:</strong> $50/hour audio editing, $250 per finished hour voice work → Streamlined Grok 3 voice mode pipeline</li>
+                    <li><strong>Firstsource:</strong> $25/hour music theory consulting → Specialized educational content development</li>
+                </ul>
+            </div>
+
+            <div class="pricing-flexibility">
+                <h2>Flexible Partnership Options</h2>
+                
+                <div class="flexibility-grid">
+                    <div class="flexibility-section">
+                        <h3>Pilot Project Pricing</h3>
+                        <ul>
+                            <li>Reduced rates for initial collaborations to demonstrate value</li>
+                            <li>Risk-free way to test our partnership fit</li>
+                            <li>Full-rate conversion after successful pilot completion</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flexibility-section">
+                        <h3>Ongoing Partnership Benefits</h3>
+                        <ul>
+                            <li>Volume discounts for consistent monthly work (10% off standard rates)</li>
+                            <li>Priority scheduling for River Walk events</li>
+                            <li>Dedicated support and rapid response times</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flexibility-section">
+                        <h3>Community Partnership Commitment</h3>
+                        <ul>
+                            <li>Special consideration for city and nonprofit initiatives</li>
+                            <li>Flexible payment terms (milestone-based, monthly retainers etc.)</li>
+                            <li>Local priority scheduling and emergency support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-value">
+                <h2>Included at No Additional Cost</h2>
+                <ul class="value-list">
+                    <li>Initial consultation and comprehensive project scoping</li>
+                    <li>Basic troubleshooting and system maintenance</li>
+                    <li>Knowledge transfer and team training sessions</li>
+                    <li>Local priority scheduling and rapid response</li>
+                    <li>Post-project support and optimization</li>
+                </ul>
+            </div>
+
+            <div class="pricing-cta">
+                <h2>Let's Build Something Great Together</h2>
+                <p>I'm excited to contribute to River Walk events and am committed to structuring our partnership in a way that delivers exceptional results within your budget. Whether you're looking for a one-time event enhancement or ongoing technical partnership, let's find the approach that works best for your team.</p>
+                
+                <div class="cta-contact">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:daniel@lufs.audio">daniel@lufs.audio</a> | <i class="fas fa-phone"></i> <a href="tel:+17146161558">(714) 616-1558</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

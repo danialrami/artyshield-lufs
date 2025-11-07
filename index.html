@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUFS Audio + ArtyShield Lab | Audio Accessibility Research Partnership</title>
+    <meta name="description" content="LUFS Audio + ArtyShield Lab - Advancing audio accessibility through research-backed implementation">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <!-- Add Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+
+    <!-- Main Navigation Tabs 
+    <div class="main-navigation">
+        <button class="nav-tab active" id="pitchDeckTab">Pitch Deck</button>
+        <button class="nav-tab" id="pricingTab">Pricing Sheet</button>
+    </div> -->
+
+    <!-- Pitch Deck Section -->
+    <div class="section" id="pitchDeckSection">
+        <!-- Slide 1: Title Slide - Partnership Introduction -->
+        <div class="slide title-slide active" id="slide1">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h1 class="glitch-effect" data-text="LUFS Audio + ArtyShield Lab">LUFS Audio + ArtyShield Lab</h1>
+                <h2>Bridging Audio Research & Real-World Implementation</h2>
+                <p>Where cutting-edge research meets production-grade implementation, audio accessibility systems become scalable realities.</p>
+                <p class="mission">Combining rigorous academic research with technical expertise to create accessible, scalable audio systems that serve diverse communities while advancing the entire field of audio accessibility.</p>
+                <div class="mission-statement">
+                    <strong>Mission:</strong> Turning validated research into deployable solutions that impact real communities while generating publishable outcomes.
+                </div>
+            </div>
+            <div class="wave-bg">
+                <svg width="100%" height="100%" viewBox="0 0 1000 300" preserveAspectRatio="none">
+                    <path d="M0,150 C100,100 200,200 300,150 C400,100 500,200 600,150 C700,100 800,200 900,150 L900,300 L0,300 Z" 
+                        fill="url(#tealGradient)" opacity="0.7"/>
+                    <path d="M0,180 C150,130 250,230 350,180 C450,130 550,230 650,180 C750,130 850,230 950,180 L950,300 L0,300 Z" 
+                        fill="url(#blueGradient)" opacity="0.5"/>
+                    <defs>
+                        <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#78BEBA" stop-opacity="0.2"/>
+                            <stop offset="50%" stop-color="#78BEBA" stop-opacity="0.5"/>
+                            <stop offset="100%" stop-color="#78BEBA" stop-opacity="0.2"/>
+                        </linearGradient>
+                        <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#2C5AA0" stop-opacity="0.2"/>
+                            <stop offset="50%" stop-color="#2C5AA0" stop-opacity="0.5"/>
+                            <stop offset="100%" stop-color="#2C5AA0" stop-opacity="0.2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="audio-wave" id="audioWave1"></div>
+        </div>
+
+        <!-- Slide 2: Partnership Vision - Complementary Strengths (NEW) -->
+        <div class="slide expertise-slide" id="slide2">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Complementary Strengths: When Research Meets Implementation">Complementary Strengths: When Research Meets Implementation</h2>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-section audio">
+                        <h3>Research Excellence</h3>
+                        <ul class="expertise-list">
+                            <li>Rigorous academic methodology grounded in peer-reviewed frameworks</li>
+                            <li>Systematic approach to accessibility assessment and validation</li>
+                            <li>Access to institutional research infrastructure and expertise</li>
+                            <li>Capacity to publish findings and advance the field</li>
+                            <li>Student involvement and academic training opportunities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-section development">
+                        <h3>Implementation Leadership</h3>
+                        <ul class="expertise-list">
+                            <li>8+ years of production systems deployed at scale</li>
+                            <li>Industry-standard tools: Wwise, FMOD, Unreal Engine, Max/MSP</li>
+                            <li>Real-world constraint navigation (budget, timeline, technical)</li>
+                            <li>Proven ability to integrate with existing infrastructure</li>
+                            <li>Rapid iteration and problem-solving capability</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="key-achievement">
+                    <strong>The Partnership Advantage:</strong> Research without implementation stays in papers. Implementation without research misses insights. Together: We turn validated research into deployable solutions that impact real communities while generating publishable outcomes.
+                </div>
+            </div>
+            <div class="audio-wave" id="audioWave2"></div>
+        </div>
+
+        <!-- Slide 3: Expertise Framework - Audio + Development + Research -->
+        <div class="slide expertise-slide" id="slide3">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Three Dimensions of Expertise: Audio + Development + Research">Three Dimensions of Expertise: Audio + Development + Research</h2>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-section audio">
+                        <h3>Audio Expertise</h3>
+                        <ul class="expertise-list">
+                            <li>Live event mixing and production (Sunnyvale Theater)</li>
+                            <li>Interactive audio systems for accessible environments</li>
+                            <li>Accessibility-focused sound design for diverse audiences</li>
+                            <li>Training from IRCAM Paris and Hans Zimmer's team</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-section development">
+                        <h3>Development Capabilities</h3>
+                        <ul class="expertise-list">
+                            <li>8+ custom systems deployed at scale</li>
+                            <li>Industry Clients: Hinge Health, xAI</li>
+                            <li>Real-time data processing and CI/CD optimization</li>
+                            <li>Automated systems for accessibility workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-section audio">
+                        <h3>Research Methodology</h3>
+                        <ul class="expertise-list">
+                            <li>Systematic approach to accessibility testing and validation</li>
+                            <li>User-centered design with diverse participant involvement</li>
+                            <li>Iterative refinement based on feedback and data</li>
+                            <li>Documentation for peer-reviewed publication</li>
+                            <li>Scalable frameworks for deployment across contexts</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="key-achievement">
+                    <strong>Key Achievement:</strong> At Hinge Health, audio-focused accessibility design achieved 18% increase in user retention for 70k+ daily active users
+                </div>
+            </div>
+            <div class="audio-wave" id="audioWave3"></div>
+        </div>
+
+        <!-- Slide 4: Proven Track Record - Accessibility & Scale -->
+        <div class="slide experience-slide" id="slide4">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Proven Track Record: Accessibility & Scale">Proven Track Record: Accessibility & Scale</h2>
+                
+                <div class="experience-grid">
+                    <div class="experience-section technical">
+                        <h3>Accessibility Innovation at Scale: Hinge Health</h3>
+                        <ul class="experience-list">
+                            <li><strong>Project:</strong> Interactive audio design for mobile health application
+                                <ul>
+                                    <li>70,000+ daily active users (iOS & Android)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Results:</strong> 18% increase in user retention through audio-focused accessibility flows
+                                <ul>
+                                    <li>Reduced cognitive load through sound-design UX</li>
+                                    <li>Deployed Wwise for scalable audio pipeline</li>
+                                    <li>Direct UX team collaboration on accessibility standards</li>
+                                </ul>
+                            </li>
+                            <li><strong>Key Insight:</strong> When audio is designed thoughtfully, accessibility drives outcomes for ALL users</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-section production">
+                        <h3>Event Production & Technical Expertise</h3>
+                        <ul class="experience-list">
+                            <li>Live mixing at Sunnyvale Theater (Midas, Yamaha, Allen & Heath boards)</li>
+                            <li>Outdoor event audio: Weather-resistant and accessible design</li>
+                            <li>Interactive audio installations (Wwise, Max/MSP, Supercollider)</li>
+                            <li>Automated systems and real-time coordination pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-wave" id="audioWave4"></div>
+        </div>
+
+        <!-- Slide 5: Scalable Applications for Audio Accessibility Research -->
+        <div class="slide applications-slide" id="slide5">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Scalable Applications for Audio Accessibility Research">Scalable Applications for Audio Accessibility Research</h2>
+                
+                <div class="applications-grid">
+                    <div class="application-section visitor">
+                        <h3>Public Accessibility & Wayfinding</h3>
+                        <ul class="application-list">
+                            <li>Interactive audio interfaces with universal access principles</li>
+                            <li>Multilingual and multi-ability accessibility systems</li>
+                            <li>Environmental audio adaptation for diverse contexts</li>
+                            <li>Real-time accessible communication systems</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="application-section technical">
+                        <h3>Real-Time Deployment Systems</h3>
+                        <ul class="application-list">
+                            <li>Remote monitoring and scalable audio infrastructure</li>
+                            <li>Integration with existing institutional systems</li>
+                            <li>Cloud-based processing for accessibility pipelines</li>
+                            <li>Real-time performance optimization and feedback</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="application-section volunteer">
+                        <h3>Community Scale Testing</h3>
+                        <ul class="application-list">
+                            <li>Diverse participant engagement and feedback collection</li>
+                            <li>Accessibility assessment frameworks</li>
+                            <li>Data collection and analysis infrastructure</li>
+                            <li>Community-centered research protocols</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="application-section operational">
+                        <h3>Digital & Remote Access</h3>
+                        <ul class="application-list">
+                            <li>Remote accessibility interfaces and asynchronous audio experiences</li>
+                            <li>Distributed participant testing and data collection</li>
+                            <li>Digital audio documentation and knowledge-sharing systems</li>
+                            <li>Scalable cloud-based audio processing and analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-wave" id="audioWave5"></div>
+        </div>
+
+        <!-- Slide 6: Partnership Model - Shared Investment -->
+        <div class="slide investment-slide" id="slide6">
+            <div class="subtle-texture"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Partnership Model: Shared Investment in Impact">Partnership Model: Shared Investment in Impact</h2>
+                
+                <p class="investment-intro">This partnership represents a shared investment in advancing audio accessibility through research-backed implementation. We offer multiple pathways to create meaningful impact while supporting your research goals.</p>
+                
+                <div class="investment-grid">
+                    <div class="investment-section approach">
+                        <h3>Partnership Models</h3>
+                        <ul class="investment-list">
+                            <li><strong>Grant Collaboration:</strong> Co-apply for NSF/NIH/Foundation funding</li>
+                            <li><strong>Pilot-to-Scale:</strong> Phase 1 proof of concept, Phase 2 expansion, Phase 3 publication</li>
+                            <li><strong>Service Partnership:</strong> Ongoing implementation with research components</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="investment-section results">
+                        <h3>Research Impact</h3>
+                        <ul class="investment-list">
+                            <li>Peer-reviewed publications advancing the field</li>
+                            <li>Real-world deployment with measurable accessibility impact</li>
+                            <li>Scalable frameworks usable across multiple contexts</li>
+                            <li>Case studies demonstrating ROI and outcomes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="investment-section packages">
+                        <h3>Investment Range</h3>
+                        <ul class="investment-list">
+                            <li>Grant-funded: $50k-$250k+ (all costs covered)</li>
+                            <li>Pilot program: $10k-$30k (proof of concept)</li>
+                            <li>Ongoing partnership: $5k-$15k/month (flexible scaling)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-bars" id="audioBars"></div>
+            <div class="audio-wave" id="audioWave6"></div>
+        </div>
+
+        <!-- Slide 7: Contact & Next Steps -->
+        <div class="slide contact-slide" id="slide7">
+            <div class="subtle-texture"></div>
+            <div class="circular-audio" id="circularAudio"></div>
+            <div class="slide-content">
+                <h2 class="glitch-effect" data-text="Let's Build This Together">Let's Build This Together</h2>
+                
+                <p style="margin-top: 2rem; font-style: italic; text-align: center; margin-bottom: 2rem;">
+                    Audio accessibility is too important to be an afterthought. 
+                    Let's partner to turn research into reality—and create systems 
+                    that genuinely improve people's lives.
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p><strong>LUFS Audio</strong></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:daniel@lufs.audio">daniel@lufs.audio</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+17146161558">(714) 616-1558</a></p>
+                        <p><i class="fas fa-globe"></i> <a href="https://lufs.audio" target="_blank">lufs.audio</a></p>
+                        
+                        <p style="margin-top: 1.5rem;"><strong>ArtyShield Lab (UGA)</strong></p>
+                        <p><i class="fas fa-envelope"></i> Prof. Jian Liu</p>
+                        <p><i class="fas fa-globe"></i> ArtyShield Lab</p>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-wave" id="audioWave7"></div>
+        </div>
+
+        <!-- Slide Navigation -->
+        <div class="slide-navigation">
+            <button class="nav-btn" id="prevBtn">←</button>
+            <button class="nav-btn" id="nextBtn">→</button>
+        </div>
+    </div>
+
+    <!-- Pricing Sheet Section (Commented Out) 
+    <div class="section" id="pricingSection" style="display: none;">
+        <div class="subtle-texture"></div>
+        <div class="pricing-content">
+            <div class="pricing-header">
+                <h1>LUFS Audio Partnership Pricing Sheet</h1>
+                <p class="pricing-subtitle">Collaborative Solutions for River Walk Events</p>
+            </div>
+
+            <div class="pricing-philosophy">
+                <h2>Collaboration Philosophy</h2>
+                <p>As a San Antonio local, I'm committed to finding creative ways to make this partnership work within your budget constraints while delivering exceptional value. I believe in building lasting relationships with our community partners, and I'm excited to contribute to the events that bring our city together.</p>
+            </div>
+
+            <div class="pricing-table-container">
+                <h2>Partnership Pricing</h2>
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service Type</th>
+                            <th>Standard Rate</th>
+                            <th>Partnership Development Rate*</th>
+                            <th>Project Package Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Audio Production & Event Services</strong></td>
+                            <td>$45-55/hour</td>
+                            <td>$35-45/hour</td>
+                            <td>$500-2,000 per event</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Full-Stack Development & Automation</strong></td>
+                            <td>$55-65/hour</td>
+                            <td>$40-55/hour</td>
+                            <td>$3,000-8,000 per system</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Combined Audio-Tech Projects</strong></td>
+                            <td>$65-75/hour</td>
+                            <td>$50-65/hour</td>
+                            <td>Custom packages available</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Consulting & Strategy</strong></td>
+                            <td>$60/hour</td>
+                            <td>$40/hour</td>
+                            <td>$200-500 per session</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="pricing-note">*Partnership Development Rates apply to pilot projects, ongoing partnerships, and community-focused initiatives.</p>
+            </div>
+
+            <div class="pricing-experience">
+                <h2>Previous Client Experience & Results</h2>
+                <ul class="experience-results">
+                    <li><strong>Hinge Health:</strong> $60/hour → Achieved 18% user retention increase through audio-focused UX flows</li>
+                    <li><strong>xAI:</strong> $50/hour audio editing, $250 per finished hour voice work → Streamlined Grok 3 voice mode pipeline</li>
+                    <li><strong>Firstsource:</strong> $25/hour music theory consulting → Specialized educational content development</li>
+                </ul>
+            </div>
+
+            <div class="pricing-flexibility">
+                <h2>Flexible Partnership Options</h2>
+                
+                <div class="flexibility-grid">
+                    <div class="flexibility-section">
+                        <h3>Pilot Project Pricing</h3>
+                        <ul>
+                            <li>Reduced rates for initial collaborations to demonstrate value</li>
+                            <li>Risk-free way to test our partnership fit</li>
+                            <li>Full-rate conversion after successful pilot completion</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flexibility-section">
+                        <h3>Ongoing Partnership Benefits</h3>
+                        <ul>
+                            <li>Volume discounts for consistent monthly work (10% off standard rates)</li>
+                            <li>Priority scheduling for River Walk events</li>
+                            <li>Dedicated support and rapid response times</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flexibility-section">
+                        <h3>Community Partnership Commitment</h3>
+                        <ul>
+                            <li>Special consideration for city and nonprofit initiatives</li>
+                            <li>Flexible payment terms (milestone-based, monthly retainers etc.)</li>
+                            <li>Local priority scheduling and emergency support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-value">
+                <h2>Included at No Additional Cost</h2>
+                <ul class="value-list">
+                    <li>Initial consultation and comprehensive project scoping</li>
+                    <li>Basic troubleshooting and system maintenance</li>
+                    <li>Knowledge transfer and team training sessions</li>
+                    <li>Local priority scheduling and rapid response</li>
+                    <li>Post-project support and optimization</li>
+                </ul>
+            </div>
+
+            <div class="pricing-cta">
+                <h2>Let's Build Something Great Together</h2>
+                <p>I'm excited to contribute to River Walk events and am committed to structuring our partnership in a way that delivers exceptional results within your budget. Whether you're looking for a one-time event enhancement or ongoing technical partnership, let's find the approach that works best for your team.</p>
+                
+                <div class="cta-contact">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:daniel@lufs.audio">daniel@lufs.audio</a> | <i class="fas fa-phone"></i> <a href="tel:+17146161558">(714) 616-1558</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
