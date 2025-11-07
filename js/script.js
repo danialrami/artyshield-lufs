@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('🎬 Pitch Deck Script Loaded');
+    
     // Section navigation
     const pitchDeckTab = document.getElementById('pitchDeckTab');
     const pricingTab = document.getElementById('pricingTab');
@@ -8,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Slide navigation
     const slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
+    
+    console.log('Found slides:', slides.length);
+    console.log('Slide IDs:', Array.from(slides).map(s => s.id).join(', '));
     
     // Audio wave animations
     function createAudioWave(elementId, color1, color2) {
@@ -195,9 +200,13 @@ document.addEventListener('DOMContentLoaded', function() {
         pitchDeckTab.classList.remove('active');
     }
     
-    // Add event listeners for section tabs
-    pitchDeckTab.addEventListener('click', showPitchDeck);
-    pricingTab.addEventListener('click', showPricing);
+    // Add event listeners for section tabs (only if they exist)
+    if (pitchDeckTab) {
+        pitchDeckTab.addEventListener('click', showPitchDeck);
+    }
+    if (pricingTab) {
+        pricingTab.addEventListener('click', showPricing);
+    }
     
     // Function to ensure audio visualizations are visible when slide changes
     function refreshVisualizations() {
@@ -243,6 +252,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show the current slide
         if (slides[index]) {
             slides[index].classList.add('active');
+            console.log('Showing slide:', slides[index].id);
+        } else {
+            console.error('Slide at index', index, 'not found');
         }
         
         // Refresh visualizations after slide change
@@ -261,11 +273,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
+        console.log('Next slide:', currentSlide + 1, 'of', slides.length);
         showSlide(currentSlide);
     }
     
     function prevSlide() {
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        console.log('Prev slide:', currentSlide + 1, 'of', slides.length);
         showSlide(currentSlide);
     }
     
@@ -275,27 +289,33 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (nextBtn) {
         nextBtn.addEventListener('click', nextSlide);
+        console.log('✓ Next button click listener attached');
+    } else {
+        console.warn('✗ Next button not found');
     }
     
     if (prevBtn) {
         prevBtn.addEventListener('click', prevSlide);
+        console.log('✓ Prev button click listener attached');
+    } else {
+        console.warn('✗ Prev button not found');
     }
     
     // Keyboard navigation
     document.addEventListener('keydown', function(e) {
-        // Only handle keyboard navigation when in pitch deck section
-        if (pitchDeckSection.style.display !== 'none') {
-            if (e.key === 'ArrowRight') {
-                nextSlide();
-            } else if (e.key === 'ArrowLeft') {
-                prevSlide();
-            }
+        // Handle arrow key navigation for slides
+        if (e.key === 'ArrowRight') {
+            nextSlide();
+            e.preventDefault();
+        } else if (e.key === 'ArrowLeft') {
+            prevSlide();
+            e.preventDefault();
         }
         
-        // Tab switching with keyboard
-        if (e.key === '1') {
+        // Tab switching with keyboard (only if tabs exist)
+        if (e.key === '1' && pitchDeckTab) {
             showPitchDeck();
-        } else if (e.key === '2') {
+        } else if (e.key === '2' && pricingTab) {
             showPricing();
         }
     });
